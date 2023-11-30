@@ -138,8 +138,9 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #010019;
-   
+    background-image: url(./background2.png);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
   
 .demonstracao > h3 {
@@ -148,13 +149,76 @@ h1 {
     display: flex;
     font-size: 50px;
     padding-top: 20px;
-    
-  
+   }
 
-
-  }
-
-  .demonstracao > p{
+  .demonstracao > p {
     padding-top: 10rem;
     color: white;
+    padding-bottom: 70px;
   }
+
+
+
+.demo-button {
+    border: solid 1px #FFAE24;
+    border-radius: 20px;
+    color: white;
+    background-color: #FFAE24;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    text-decoration: none;
+    width: 300px; height: 30px;
+    font-family: "open sans" sans-serif;
+    display: flex;   
+    align-items: center; 
+    justify-content: center; 
+    font-weight: bolder;
+    
+
+
+}
+
+.demo-button:hover{
+  background-color: #FFAE24;
+  color: white;
+  transform: scale(1.2)
+}
+
+
+.play-button {
+  border: solid 1px #1F1347;
+  border-radius: 20px;
+  color: #1F1347;
+  background-color: #FC5658;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+  text-decoration: none;
+  width: 100px; height: 30px;
+  font-family: "open sans" sans-serif;
+  display: flex;   
+  align-items: center; 
+  justify-content: center; 
+  box-shadow: #1F1347 3px 3px 0px;
+  font-weight: bolder;
+  margin-top: 20rem;
+}
+
+.control {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  width: 100px;
+
+}
+
+.Contact {
+  background-image: url(./background-contact.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-items: center;
+ 
+  
+  
+}
+
+#input-do-email {
+  width: 100px;
+}
