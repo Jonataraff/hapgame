@@ -27,11 +27,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Baskervville:
     ital@0;1&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,
     wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <img src="./sagfesdghsdfgvsd.png" alt="logo">
+            <img src="./images/sagfesdghsdfgvsd.png" alt="logo">
             <div class="links">
                 <ul  class="nav-itens">
                     <li>Home</li>
@@ -50,7 +53,7 @@
         <h1>Pitch</h1>
         <h4>www.youtube.com/hapvida</h4>
 		<iframe class="watch" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-		<p class="video-descrip">A cima você pode visualizar o pitch completo, o mesmo<br>explica detalhadamente o funcionamento da solução!</p>
+		<p class="video-descrip">A cima você pode visualizar o pitch completo, o mesmo explica detalhadamente o funcionamento da solução!</p>
 		<div ontouchstart="">
             <div class="button">
               <a href="#">Start</a>
@@ -58,44 +61,61 @@
           </div>
     </section>
     
-    <section class="prosolve">
-        <div class="container">
-            <img class="grafic" src="./grafico_numeros_25_a.png" alt="grafico">
-        <h2 class="problem">Problematica</h2>
-        <p class="description-problem">Diabetes é doença crônica que afeta 7% da população brasileira. Custos com tratamento podem chegar a US$ 123 bilhões em 2030.</p>
-
-        <h2 class="solution">solução</h2>
-        <p class="description-solution">Propõe-se uma aplicação gamificada para prevenção da diabetes, 
-            onde usuários realizam desafios para ganhar pontos trocáveis por prêmios, como descontos nos serviços da Hapvida NotreDame. 
-            A abordagem visa tornar o cuidado com a saúde divertido, incentivando hábitos saudáveis. A empresa poderia economizar recursos ao detectar a diabetes precocemente, 
-            resultando em tratamentos mais simples e custos reduzidos a longo prazo.</p>
+    <section id="problemesolve">
+        <div class="left">
+            <h2>Problemática</h2>
+            <p>Diabetes é doença crônica que afeta 7% da população brasileira. 
+                Custos com tratamento podem chegar a US$ 123 bilhões em 2030.</p>
+            <h2>Solução</h2>
+            <p>A criação de uma aplicação gamificada, que auxiliaria o usuário na prevenção da diabetes. o usuário poderia de forma divertida cuidar de sua saúde, REALIZANDO OS DESAFIOS PROPOSTOS, O MESMO receberia PONTOS QUE PODERIAM SER TROCAdos por premiações</p>
         </div>
+
+        <div class="right">
+            <h2>Gráfico</h2>
+            <img src="./images/grafico_numeros_25_a.png" alt="grafico">
+            <p>No gráfico a cima é possível analisar alguns dados a respeito do assunto.
+                Neste link é possível acessar todas as informações:</p>
+        </div>
+ 
+    </section>
+    
         
 
-    </section>
+    
 
     <section class="demonstracao">
 
     <h3>Demonstração</h3>
-        <p>APÓS A EXPLICAÇÃO DE FUNCIONAMENTO DO APLICATIVO, ELE ESTÁ<br>DISPONÍVEL PARA TESTES, NO LINK ABAIXO É POSSÍVEL ACESSAR UMA<br> 
-            SIMULAÇÃO DO CÓDIGO, NÃO SE ESQUEÇA DE MANDAR A SUA<br> AVALIAÇÃO A RESPEITO DO APLICATIVO</p>
+        <p>APÓS A EXPLICAÇÃO DE FUNCIONAMENTO DO APLICATIVO, ELE ESTÁ DISPONÍVEL PARA TESTES, NO LINK ABAIXO É POSSÍVEL ACESSAR UMA 
+            SIMULAÇÃO DO CÓDIGO, NÃO SE ESQUEÇA DE MANDAR A SUA AVALIAÇÃO A RESPEITO DO APLICATIVO</p>
            <a href="#" class="demo-button">Acessar Link</a>
            <a href="#" class = "play-button">Play</a>
-           <img class="control" src="./controle.png" alt="">
+           <img class="control" src="./images/controle.png" alt="">
             
     </section>
 
-    <section class="Contact">
-        <h2>Participe dessa iniciativa conosco!</h2>
+    <section class="contact">
         <h2>Contato</h2>
-        <h3>Nome</h3>
-        <input id="input-do-email">
-
-     <h3>E-mail</h3>
-        <input id="input-do-nome">
-        <br><br>
-        <button>Entrar</button>
-
+        <div id="contact-container">
+            <img src="./images/HAPV3.SA-92fa555b.png" alt="">
+            <div>
+                <h3>Participe dessa iniciativa conosco!</h3>
+                <form class="formulario">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email"> 
+                    <button class="button-contact">Play</button>
+                </form>
+                
+            </div>
+        </div>
     </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

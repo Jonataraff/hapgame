@@ -52,17 +52,22 @@ h1 {
     font-size: 5rem;
 }
 
+.home > h4 {
+  color: white
+}
+
 .video-descrip {
     font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 20px;
+    width: 31rem;
 }
 
 
 .button{
     position:relative;
     display:inline-block;
-    margin:20px;
+    margin: 3rem;
   }
   
   .button a{
@@ -113,24 +118,58 @@ h1 {
     -moz-border-radius: 5px;
     border-radius: 5px;
   }
+  
+  #problemesolve {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-image: url(./images/background1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 1.5rem 0;
+      
+  }
 
-  .prosolve {
-    font-family: 'Open Sans', sans-serif;
+
+  .right{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .right > p{
+    color:white;
+    font-family: 'Archivo Black', sans-serif;
+    width: 30rem;
+  }
+
+  .right > h2{
+    font-family: "open-sans" sans-serif;
+    color: #F1842D;
+    font-size: 3rem;
     
   }
 
-  .grafic {
-    width: 500px;
-
-  }
-
-  .container{
+  .left{
     display: flex;
-    flex-direction: row-reverse;
-    
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
   }
+
+  .left > h2 {
+    font-family: "open-sans" sans-serif;
+    color: #F1842D;
+    font-size: 3rem;
+  }
+
+  .left > p {
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    width: 30rem;
+  }
+
 
 .demonstracao{
     display: flex;
@@ -138,23 +177,28 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(./background2.png);
+    background-image: url(./images/background2.png);
    background-repeat: no-repeat;
    background-size: cover;
+   background-position: center;
+   background-clip: border-box;
+  
 }
   
 .demonstracao > h3 {
-    font-family: "open sans" sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     color: #F1842D;
     display: flex;
-    font-size: 50px;
-    padding-top: 20px;
+    font-size: 3rem;
+    padding-top: 2rem;
    }
 
   .demonstracao > p {
     padding-top: 10rem;
     color: white;
-    padding-bottom: 70px;
+    padding-bottom: 3rem;
+    width: 32rem;
+    font-family: 'Archivo Black', sans-serif;
   }
 
 
@@ -198,7 +242,13 @@ h1 {
   justify-content: center; 
   box-shadow: #1F1347 3px 3px 0px;
   font-weight: bolder;
-  margin-top: 20rem;
+  margin-top: 10rem;
+}
+
+.play-button:hover{
+  background-color: #FC5658;
+  color: white;
+  transform: scale(1.2)
 }
 
 .control {
@@ -208,17 +258,88 @@ h1 {
 
 }
 
-.Contact {
-  background-image: url(./background-contact.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-items: center;
- 
+.contact {
+  background-color: #2E1B5B;
+ padding: 2rem 0;
+}
+
+.contact h2 { 
+  text-align: center;
+  color: #F1842D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
   
+}
+#contact-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ #contact-container h3 {
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  padding-top: 10rem;
+ }
+
+
+ 
+ .contact img {
+  width: 10rem;
+  align-items: center;
+
+}
+
+label{
+  color:white;
+  padding-top: 1.5rem;
+  font-family: 'Open Sans', sans-serif;
+  text-align: start;
+  width: 100%;
   
 }
 
-#input-do-email {
-  width: 100px;
+
+
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-top: 2.5rem;
+
+  
 }
+
+.formulario #name,#email {
+  width: 100%;
+  padding: 0.8rem;
+  border:none;
+  border-radius: 0.3rem;
+}
+
+.button-contact {
+  border: solid 1px #1F1347;
+  border-radius: 20px;
+  color: #1F1347;
+  background-color: #FC5658;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+  text-decoration: none;
+  width: 100px; height: 30px;
+  font-family: "open sans" sans-serif;
+  display: flex; 
+  flex-direction: column;  
+  align-items: center; 
+  justify-content: center; 
+  box-shadow: #1F1347 3px 3px 0px;
+  font-weight: bolder;
+  
+}
+
+.button-contact:hover{
+  background-color: #FC5658;
+  color: white;
+  transform: scale(1.2)
+}
+
