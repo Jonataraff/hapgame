@@ -36,28 +36,28 @@
         <nav>
             <img src="./images/sagfesdghsdfgvsd.png" alt="logo">
             <div class="links">
-                <ul  class="nav-itens">
-                    <li>Home</li>
-                    <li>Problema & Solução</li>
-                    <li>Demonstração da Solução</li>
+                <ul class="nav-itens">
+                    <li onclick="scrollToSection('home')">Home</li>
+                    <li onclick="scrollToSection('problemesolve')">Problema & Solução</li>
+                    <li onclick="scrollToSection('demonstracao')">Demonstração da Solução</li>
                 </ul>
             </div>
-            Contato
+            <li onclick="scrollToSection('contact')">Contato</li>
         </nav>
     </header>
     
         
     
       
-    <section class ="home">
+    <section id ="home">
         <h1>Pitch</h1>
         <h4>www.youtube.com/hapvida</h4>
-		<iframe class="watch" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        <div class="videoContainer">
+            <iframe class="videoContainer" width="560" height="315" src="https://www.youtube.com/embed/toNEolT4DUo?si=USGDipZcN4m4JgEX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
 		<p class="video-descrip">A cima você pode visualizar o pitch completo, o mesmo explica detalhadamente o funcionamento da solução!</p>
 		<div ontouchstart="">
-            <div class="button">
-              <a href="#">Start</a>
-            </div>
+            <button class="button" onclick="scrollToSection('problemesolve')">Start</button>
           </div>
     </section>
     
@@ -83,7 +83,7 @@
 
     
 
-    <section class="demonstracao">
+    <section id="demonstracao">
 
     <h3>Demonstração</h3>
         <p>APÓS A EXPLICAÇÃO DE FUNCIONAMENTO DO APLICATIVO, ELE ESTÁ DISPONÍVEL PARA TESTES, NO LINK ABAIXO É POSSÍVEL ACESSAR UMA 
@@ -94,27 +94,30 @@
             
     </section>
 
-    <section class="contact">
+    <section id="contact">
         <h2>Contato</h2>
         <div id="contact-container">
             <img src="./images/HAPV3.SA-92fa555b.png" alt="">
             <div>
                 <h3>Participe dessa iniciativa conosco!</h3>
-                <form class="formulario">
+                <form class="formulario"onsubmit="return validarFormulario()">
                     <label for="name">Nome</label>
                     <input type="text" id="name">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email"> 
-                    <button class="button-contact">Play</button>
+                    <input type="email" id="email">
+                    <span id="mensagemErroName" class="error-message"></span>
+                    <span id="mensagemErroEmail" class="error-message"></span>
+                    <button class="button-contact" onsubmit="return validarFormulario()">Play</button>
                 </form>
                 
             </div>
         </div>
     </section>
-
+    
     <footer>
-
-    </footer>
+        <img src="./images/sagfesdghsdfgvsd.png" alt="">
+        <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+      </footer>
 
     <script src="./script.js"></script>
 </body>
